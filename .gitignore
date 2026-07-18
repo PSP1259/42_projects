@@ -1,1 +1,9 @@
 germinette/
+
+# compiled files
+*.o
+*.a
+*.out
+*.exe
+*.dSYM
+.DS_Store
