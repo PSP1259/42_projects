@@ -6,11 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 15:08:21 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/19 16:56:50 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/07/19 17:05:18 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_isalpha(char c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 'a' && c <= 'z')
 		|| (c >= 'A' && c <= 'Z'))

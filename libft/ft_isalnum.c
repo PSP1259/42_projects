@@ -6,7 +6,7 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/19 16:57:48 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/19 17:04:16 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/07/19 17:06:26 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ int	ft_isalnum(int c)
 {
 	if (ft_isalpha(c) || ft_isdigit(c))
 	{
-		return (c)
+		return (c);
 	}
 	return (0);
 }
