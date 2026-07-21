@@ -6,7 +6,7 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/21 18:41:08 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/21 19:24:06 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/07/21 19:28:33 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,6 +28,7 @@ void	*ft_memset(void *b, int c, size_t len)
 	return (b);
 }
 
+/*
 int main(void)
 {
 	char	text[50] = "Hola Malaga";
@@ -44,11 +45,4 @@ int main(void)
 
 	return (0);
 }
-
-
-
-
-
-
-
-
+*/
