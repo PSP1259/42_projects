@@ -6,7 +6,7 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 10:33:35 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/22 10:56:18 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/07/22 11:29:15 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,6 +25,7 @@ void	ft_bzero(void *b, size_t len)
 	}
 }
 
+/*
 int	main(void)
 {
 	char	text[50] = "Hola Malaga";
@@ -34,3 +35,4 @@ int	main(void)
 	printf("After: %s\n", &text[1]);
 	return (0);
 }
+*/
