@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 11:16:20 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/22 18:17:43 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/07/22 18:23:19 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,9 +20,9 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 	dd = (char *)dest;
 	ss = (const char *)src;
 	if (len == 0 || dest == src)
-        return (dest);
-    if (!dest || !src)
-        return (0);
+		return (dest);
+	if (!dest || !src)
+		return (0);
 	while (len > 0)
 	{
 		if (*dd != *ss)
