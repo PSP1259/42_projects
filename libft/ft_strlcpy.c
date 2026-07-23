@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 19:21:11 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/22 19:44:05 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/07/23 17:11:39 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 {
 	size_t	i;
 	size_t	lens;
-	
+
 	i = 0;
 	lens = 0;
 	while (src[lens] != '\0')
@@ -32,6 +32,7 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t size)
 	return (lens);
 }
 
+/*
 int	main(void)
 {
 	char	text[50] = "Hola Malaga";
@@ -41,3 +42,4 @@ int	main(void)
 	printf("%s", dest);
 	return (0);
 }
+*/
