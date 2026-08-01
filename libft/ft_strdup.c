@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 13:06:13 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/01 13:58:28 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/01 13:59:57 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,6 +38,7 @@ char	*ft_strdup(const char *s)
 	return (d);
 }
 
+/*
 int	main(void)
 {
 	const char	text[] = "Hola Malaga";
@@ -48,3 +49,4 @@ int	main(void)
 	free(result);
 	return (0);
 }
+*/
