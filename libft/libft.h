@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/14 19:58:58 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/08/14 20:24:45 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,10 +21,11 @@
 typedef struct s_list
 {
 	void			*content;
+	size_t			content_size;
 	struct s_list	*next;
-}		t_list;
+}					t_list;
 
-t_list	*ft_lstnew(void *content);
+t_list	*ft_lstnew(void const *content, size_t content_size);
 void	ft_lstadd_front(t_list **alst, t_list *new);
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstlast(t_list *lst);
