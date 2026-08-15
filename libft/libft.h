@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/15 17:19:25 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/08/15 18:04:43 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -30,13 +30,13 @@ t_list	*ft_lstnew(void const *content, size_t content_size);
 void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t));
 
 /* ---------------	CHARS		--------------- */
-int		ft_isalpha(int c);
-int		ft_isdigit(int c);
-int		ft_isalnum(int c);
-int		ft_isascii(int c);
-int		ft_isprint(int c);
-int		ft_toupper(int c);
-int		ft_tolower(int c);
+int		ft_isalpha(int c); // done
+int		ft_isdigit(int c); // done
+int		ft_isalnum(int c); // done
+int		ft_isascii(int c); // done
+int		ft_isprint(int c); // done
+int		ft_toupper(int c); // done
+int		ft_tolower(int c); // done
 
 /* ---------------	STRINGS		--------------- */
 size_t	ft_strlen(const char *str);
