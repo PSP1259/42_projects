@@ -6,16 +6,17 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/14 20:24:45 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/15 16:40:08 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <stddef.h>
-# include <unistd.h>
-# include <stdlib.h>
+#include <stddef.h>
+#include <unistd.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /* ---------------	LISTS		--------------- */
 typedef struct s_list
