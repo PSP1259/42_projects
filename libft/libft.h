@@ -6,12 +6,12 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/15 16:42:39 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/15 17:19:25 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
-# define LIBFT_H
+#define LIBFT_H
 
 #include <stddef.h>
 #include <unistd.h>
@@ -40,33 +40,57 @@ int		ft_tolower(int c);
 
 /* ---------------	STRINGS		--------------- */
 size_t	ft_strlen(const char *str);
+char	*ft_strdup(const char *s1);
+achtung strcpy
+achtung strncpy
+achtung strcat
+achtung strncat
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
-size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
+achtung strstr
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
-char	*ft_strdup(const char *s1);
-char	*ft_substr(char const *s, unsigned int start, size_t len);
+achtung strcmp
+int		ft_strncmp(const char *s1, const char *s2, size_t n);
+achtung strnew
+achtung strdel
+achtung strclr
+void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+achtung strmap
+char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
+achtung strnequ
+achtung strsub
 char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_strtrim(char const *s1, char const *set);
-char	**ft_split(char const *s, char c);
-char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
-void	ft_striteri(char *s, void (*f)(unsigned int, char*));
+char	**ft_strsplit(char const *s, char c);
+
+// EXTRA STRINGS:
+size_t	ft_strlcpy(char *dst, const char *src, size_t dstsize);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
 
 /* ---------------   FILE DESCRIPTORS   --------------- */
+achtung putchar
+achtung putstr
+achtung putendl
+achtung putnbr
 void	ft_putchar_fd(char c, int fd);
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /* ---------------	MEMORY		--------------- */
+achtung memalloc
+achtung memdel
+ 
 void	*ft_memset(void *b, int c, size_t len);
 void	ft_bzero(void *s, size_t n);
 void	*ft_memcpy(void *dst, const void *src, size_t n);
+achtung: memccpy
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
+
+// EXTRA MEMORY:
 void	*ft_calloc(size_t count, size_t size);
 
 /* ---------------	NUMBERS		--------------- */
