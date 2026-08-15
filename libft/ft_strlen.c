@@ -6,9 +6,11 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/21 18:33:21 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/21 18:40:32 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/15 18:23:49 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include <stddef.h>
 
 size_t	ft_strlen(const char *s)
 {
@@ -21,3 +23,17 @@ size_t	ft_strlen(const char *s)
 	}
 	return (i);
 }
+
+/*
+#include <stdio.h>
+
+int main(void)
+{
+    const char  text[] = "Hola";
+    int         result;
+
+    result = ft_strlen(text);
+    printf("%i", result);
+    return (0);
+}
+*/
