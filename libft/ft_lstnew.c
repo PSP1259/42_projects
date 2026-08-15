@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 19:35:16 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/14 20:34:11 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/15 16:47:34 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,6 +46,7 @@ t_list *ft_lstnew(void const *content, size_t content_size)
 	return (list);
 }
 
+/*
 int	main(void)
 {
 	char	*str = "Hola Malaga";
@@ -60,3 +61,4 @@ int	main(void)
 	}
 	return (0);
 }
+*/
