@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/15 18:04:43 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/08/16 23:54:37 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,13 +39,17 @@ int		ft_toupper(int c); // done
 int		ft_tolower(int c); // done
 
 /* ---------------	STRINGS		--------------- */
-size_t	ft_strlen(const char *str);
+size_t	ft_strlen(const char *str); // done
+char		*ft_strcpy(char *dst, const char *src); // done
+char    *ft_strncpy(char *dst, char const *src, size_t size) // done
+char    *strcat(char *dst, const char *src) // done
+char    *strncat(char *dst, const char *src, size_t size) // done
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize); // done
+char		*ft_strchr(const char *str, int c); // done
+
+
+
 char	*ft_strdup(const char *s1);
-achtung strcpy
-achtung strncpy
-achtung strcat
-achtung strncat
-size_t	ft_strlcat(char *dst, const char *src, size_t dstsize);
 char	*ft_strchr(const char *str, int c);
 char	*ft_strrchr(const char *str, int c);
 achtung strstr
