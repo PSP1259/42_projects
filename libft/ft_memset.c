@@ -6,11 +6,11 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/21 18:41:08 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/21 19:28:33 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/18 12:20:23 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stddef.h>
 
 void	*ft_memset(void *b, int c, size_t len)
 {
@@ -29,6 +29,8 @@ void	*ft_memset(void *b, int c, size_t len)
 }
 
 /*
+#include <stdio.h>
+
 int main(void)
 {
 	char	text[50] = "Hola Malaga";
