@@ -6,11 +6,11 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 10:33:35 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/22 11:29:15 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/20 14:46:37 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stddef.h>
 
 void	ft_bzero(void *b, size_t len)
 {
@@ -26,6 +26,8 @@ void	ft_bzero(void *b, size_t len)
 }
 
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	char	text[50] = "Hola Malaga";
