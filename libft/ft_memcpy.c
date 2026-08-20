@@ -6,11 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 11:16:20 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/22 18:23:19 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/20 15:11:20 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include <stdio.h>
+#include <stddef.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t len)
 {
@@ -37,6 +37,8 @@ void	*ft_memcpy(void *dest, const void *src, size_t len)
 }
 
 /*
+#include <stdio.h>
+
 int main(void)
 {
     char    src1[50] = "Hola Malaga";
