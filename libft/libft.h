@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/16 23:54:37 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/08/21 11:53:02 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -46,16 +46,17 @@ char    *strcat(char *dst, const char *src) // done
 char    *strncat(char *dst, const char *src, size_t size) // done
 size_t	ft_strlcat(char *dst, const char *src, size_t dstsize); // done
 char		*ft_strchr(const char *str, int c); // done
+char		*ft_strrchr(const char *str, int c); // done
+char 		*ft_strstr(const char *h, const char *n); // done
+char    *ft_strnstr(const char *b, const char *l, size_t len); // done
+int 		ft_strcmp(const char *s1, const char *s2) // done
+int			ft_strncmp(const char *s1, const char *s2, size_t n); // done
+
+
 
 
 
 char	*ft_strdup(const char *s1);
-char	*ft_strchr(const char *str, int c);
-char	*ft_strrchr(const char *str, int c);
-achtung strstr
-char	*ft_strnstr(const char *s1, const char *s2, size_t n);
-achtung strcmp
-int		ft_strncmp(const char *s1, const char *s2, size_t n);
 achtung strnew
 achtung strdel
 achtung strclr
@@ -83,13 +84,15 @@ void	ft_putendl_fd(char *s, int fd);
 void	ft_putnbr_fd(int n, int fd);
 
 /* ---------------	MEMORY		--------------- */
+void	*ft_memset(void *b, int c, size_t len); // done
+void	ft_bzero(void *s, size_t n); // done
+void	*ft_memcpy(void *dst, const void *src, size_t n); // done
+void *ft_memccpy(void *dest, const void *src, int c, size_t n) // done
+
+
+
 achtung memalloc
 achtung memdel
- 
-void	*ft_memset(void *b, int c, size_t len);
-void	ft_bzero(void *s, size_t n);
-void	*ft_memcpy(void *dst, const void *src, size_t n);
-achtung: memccpy
 void	*ft_memmove(void *dst, const void *src, size_t len);
 void	*ft_memchr(const void *s, int c, size_t n);
 int		ft_memcmp(const void *s1, const void *s2, size_t n);
