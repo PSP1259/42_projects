@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 19:16:15 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/27 19:36:48 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/21 18:20:12 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -28,7 +28,7 @@ int	ft_atoi(const char *nptr)
 	if (nptr[i] == '-' || nptr[i] == '+')
 	{
 		if (nptr[i] == '-')
-			sign = -1;
+			sign *= -1;
 		i++;
 	}
 	while ((nptr[i] >= '0' && nptr[i] <= '9') && nptr[i] != '\0')
