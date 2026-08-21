@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/20 15:12:29 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/20 15:35:48 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/21 12:51:31 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,6 +23,10 @@ void *ft_memccpy(void *dest, const void *src, int c, size_t n)
 	ss = (const unsigned char *)src;
 	ch = c;
 	i = 0;
+	if (len == 0 || dest == src)
+		return (dest);
+	if (!dest || !src)
+		return (0);
 	while (i < n)
 	{
 		*dd = *ss;
