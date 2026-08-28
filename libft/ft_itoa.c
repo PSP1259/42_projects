@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 18:18:14 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/07 18:59:35 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/29 00:11:48 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,68 +18,59 @@
 	The string of the converted integer.
 */
 
-#include <stdio.h>
 #include <stdlib.h>
-#include <limits.h>
 
-static size_t	ft_itoa_len(long num)
+static int	ft_len(long n)
 {
-	size_t	len;
+	int	len;
 
 	len = 0;
-	if (num == 0)
-	{
+	if (n == 0)
 		return (1);
-	}
-	if (num < 0)
+	if (n < 0)
 	{
 		len++;
-		num = -num;
+		n = -n;
 	}
-	while (num >= 1)
+	while (n > 0)
 	{
 		len++;
-		num /= 10;
+		n /= 10;
 	}
 	return (len);
 }
 
-static char	*ft_num_to_str(long num, char *str, size_t len)
-{
-	str = calloc(len + 1, sizeof(char));
-	if (!str)
-		return (NULL);
-	if (num < 0)
-	{
-		str[0] = '-';
-		num = -num;
-	}
-	len--;
-	while (len)
-	{
-		str[len] = (num % 10) + '0';
-		num /= 10;
-		len--;
-	}
-	if (str[0] != '-')
-		str[0] = (num % 10) + '0';
-	return (str);
-}
-
 char	*ft_itoa(int n)
 {
-	long	num;
-	size_t	len;
+	long	nbr;
+	int		len;
 	char	*str;
 
-	num = n;
-	len = ft_itoa_len(num);
-	str = 0;
-	str = ft_num_to_str(num, str, len);
+	nbr = n;
+	len = ft_len(nbr);
+	str = malloc(sizeof(char) * (len + 1));
 	if (!str)
-		return (NULL);
+		return (0);
+	str[len] = '\0';
+	if (nbr == 0)
+		str[0] = '\0';
+	if (nbr < 0)
+	{
+		str[0] = '-';
+		nbr = -nbr;
+	}
+	while (nbr > 0)
+	{
+		len--;
+		str[len] = (nbr % 10) + '0';
+		nbr /= 10;
+	}
 	return (str);
 }
+
+/*
+#include <stdio.h>
+#include <limits.h>
 
 int	main(void)
 {
@@ -107,3 +98,4 @@ int	main(void)
 
 	return (0);
 }
+*/
