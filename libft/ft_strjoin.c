@@ -6,66 +6,42 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 22:26:04 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/01 22:59:53 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/28 17:05:40 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-! to many lines > 25 & variable declaration !
-- line 33: ft_strlen(s1)...
-- line 38: ft_calloc()
-*/
-
-#include <stdio.h>
 #include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)
 {
-	char		*s3;
-	int			len_1;
-	int			len_2;
-	int			size_3;
-	int			start_1;
-	int			start_2;
+	int		i;
+	int		j;
+	char	*s3;
 
 	if (!s1 || !s2)
-		return (NULL);
-	len_1 = 0;
-	while (s1[len_1] != '\0')
-		len_1++;
-	len_2 = 0;
-	while (s2[len_2] != '\0')
-		len_2++;
-	if (len_1 == 0 && len_2 == 0)
-	{
-		s3 = malloc(1 * sizeof(char));
-		if (!s3)
-			return (NULL);
-		s3[0] = '\0';
-		return (s3);
-	}
-	size_3 = len_1 + len_2 + 1;
-	s3 = malloc(size_3 * sizeof(char));
+		return (0);
+	i = 0;
+	while (s1[i] != '\0')
+		i++;
+	j = 0;
+	while (s2[j] != '\0')
+		j++;
+	s3 = malloc(sizeof(char) * (i + j + 1));
 	if (!s3)
-		return (NULL);
-	start_1 = 0;
-	while (start_1 < len_1)
-	{
-		s3[start_1] = s1[start_1];
-		start_1++;
-	}
-	start_2 = 0;
-	while (start_2 < len_2)
-	{
-		s3[start_1] = s2[start_2];
-		start_1++;
-		start_2++;
-	}
-	s3[start_1] = '\0';
+		return (0);
+	i = -1;
+	while (s1[++i] != '\0')
+		s3[i] = s1[i];
+	j = -1;
+	while (s2[++j] != '\0')
+		s3[i + j] = s2[j];
+	s3[i + j] = '\0';
 	return (s3);
 }
 
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	const char	text1[] = "Hola ";
