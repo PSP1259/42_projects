@@ -6,8 +6,8 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 16:37:01 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/12 17:03:19 by pspuhler         ###   ########.fr       */
-/*                                                                            */
+/*   Updated: 2026/08/28 15:26:08 by pspuhler         ###   ########.fr       */
+/*                                                                             */
 /* ************************************************************************** */
 
 /*
@@ -41,6 +41,7 @@ char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 	return (res);
 }
 
+/*
 static char	test(unsigned int i, char c)
 {
 	if (c >= 'a' && c <= 'z' && i % 2 == 0)
@@ -59,3 +60,4 @@ int	main(void)
 	free(res);
 	return (0);
 }
+*/
