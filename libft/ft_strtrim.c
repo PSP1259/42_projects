@@ -6,18 +6,10 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 23:01:15 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/05 18:25:15 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/28 17:13:33 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-- Failed by norminette: > 25 lines
-- line 41: ft_strdup
-- line 50: ft_strlen
-- line 58: ft_substr
-*/
-
-#include <stdio.h>
 #include <stdlib.h>
 
 static int	is_set(char c, char const *set)
@@ -56,16 +48,14 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (NULL);
 	i = 0;
 	while (start < end)
-	{
-		res[i] = s1[start];
-		i++;
-		start++;
-	}
+		res[i++] = s1[start++];
 	res[i] = '\0';
 	return (res);
 }
 
 /*
+#include <stdio.h>
+
 int	main(void)
 {
 	const char	s1[] = "    xxxHola Malaga   x  x";
