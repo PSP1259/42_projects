@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 17:04:08 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/12 17:12:41 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/28 11:32:54 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,6 +27,7 @@ void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 	}
 }
 
+/*
 static void	my_upper(unsigned int i, char *c)
 {
 	if (*c >= 'a' && *c <= 'z' && i % 2 == 0)
@@ -41,3 +42,4 @@ int	main(void)
 	printf("%s", str);
 	return (0);
 }
+*/
