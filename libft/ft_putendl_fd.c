@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 18:26:43 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/14 18:32:59 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/29 11:17:45 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,6 +24,7 @@ void	ft_putendl_fd(char *s, int fd)
 	write(fd, "\n", 1);
 }
 
+/*
 int	main(void)
 {
 	char	text[] = "Hola Malaga";
@@ -31,3 +32,4 @@ int	main(void)
 	ft_putendl_fd(text, 1);
 	return (0);
 }
+*/
