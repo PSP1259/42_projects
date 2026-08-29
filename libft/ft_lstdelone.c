@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 11:40:18 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/15 16:46:32 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/29 17:55:56 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
 	*alst = NULL;
 }
 
-//---Test the function---
+/*---Test the function---
 
 void	del_content(void *content, size_t size)
 {
@@ -68,5 +68,4 @@ int	main(void)
 		printf("Pointer is not NULL -> failed");
 	return (0);
 }
-
-	
+*/
