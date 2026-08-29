@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 17:16:45 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/12 17:20:45 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/29 11:16:23 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,10 @@ void	ft_putchar_fd(char c, int fd)
 	write(fd, &c, 1);
 }
 
+/*
 int	main(void)
 {
 	ft_putchar_fd('P', 1);
 	return (0);
 }
+*/
