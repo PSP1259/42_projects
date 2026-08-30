@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/24 12:26:03 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:49:19 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 18:03:13 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 
 void	ft_memdel(void **ap)
 {
-	if (ap);
+	if (ap)
 	{
 		free(*ap);
 		*ap = NULL;
