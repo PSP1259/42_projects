@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/30 17:43:30 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/08/30 18:06:17 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -57,7 +57,7 @@ char    *ft_strnstr(const char *b, const char *l, size_t len); // done
 int 		ft_strcmp(const char *s1, const char *s2); // done
 int			ft_strncmp(const char *s1, const char *s2, size_t n); // done
 char		*ft_strdup(const char *s1); // done
-void		*ft_strnew(size_t size); // done
+char		*ft_strnew(size_t size); // done
 void 		ft_strdel(char **as); // done
 void    ft_strclr(char *s); // done
 void		ft_striter(char *s, void (*f)(char*)); // done
