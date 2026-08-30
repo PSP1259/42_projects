@@ -6,9 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 10:58:10 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 11:04:24 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:52:26 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_strclr(char *s)
 {

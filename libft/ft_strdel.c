@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/24 13:09:30 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/24 13:15:11 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:52:59 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 void ft_strdel(char **as)

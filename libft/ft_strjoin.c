@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 22:26:04 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 17:05:40 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:54:02 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 char	*ft_strjoin(char const *s1, char const *s2)

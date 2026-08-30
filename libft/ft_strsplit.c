@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 23:02:54 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 23:25:02 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:56:20 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 static size_t	count_word(char const *s, char c)

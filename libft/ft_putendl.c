@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/29 10:58:36 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/29 11:02:00 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:50:21 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <unistd.h>
 
 void	ft_putendl(char const *s)

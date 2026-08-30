@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 11:58:54 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/26 12:26:35 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:56:11 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
 char	*ft_strrchr(const char *s, int c)

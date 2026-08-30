@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 22:22:19 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/16 22:42:03 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:55:12 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 char	*strncat(char *dst, const char *src, size_t size)

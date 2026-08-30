@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 20:25:20 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/15 20:39:39 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:55:31 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 char	*ft_strncpy(char *dst, char const *src, size_t size)

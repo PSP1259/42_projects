@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 11:35:15 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 15:26:11 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:54:52 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 char	*ft_strmap(char const *s, char (*f)(char))

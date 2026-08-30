@@ -6,9 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 18:12:22 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/17 16:43:26 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:55:59 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*ft_strnstr(const char *b, const char *l, size_t len)
 {

@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 13:45:55 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/01 14:33:45 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:57:15 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,6 +17,7 @@
 - line 47: ft_strlcpy(res, src, reslen)
 */
 
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 

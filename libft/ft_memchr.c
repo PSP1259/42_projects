@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 13:06:22 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/26 13:34:26 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:48:42 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
 void	*ft_memchr(const void *s, int c, size_t n)

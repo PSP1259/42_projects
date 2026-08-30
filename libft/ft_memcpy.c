@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 11:16:20 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/20 15:11:20 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:49:07 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t len)

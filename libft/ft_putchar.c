@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/29 10:46:12 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/29 10:50:34 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:50:02 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <unistd.h>
 
 void	ft_putchar(char c)

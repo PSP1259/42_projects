@@ -6,9 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/16 22:13:17 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/16 22:41:18 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:51:56 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char	*strcat(char *dst, const char *src)
 {

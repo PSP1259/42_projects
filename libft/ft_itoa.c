@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 18:18:14 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/29 10:36:29 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:47:56 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,6 +18,7 @@
 	The string of the converted integer.
 */
 
+#include "libft.h"
 #include <stdlib.h>
 
 static int	ft_len(long n)

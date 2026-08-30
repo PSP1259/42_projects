@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:27:48 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/05 19:15:39 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:51:39 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 

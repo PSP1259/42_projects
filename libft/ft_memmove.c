@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 16:59:19 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/22 18:25:37 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:49:33 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
 void	*ft_memmove(void *dest, const void *src, size_t len)

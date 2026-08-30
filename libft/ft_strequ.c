@@ -6,9 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 15:41:26 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 15:41:31 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:53:17 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_strequ(char const *s1, char const *s2)
 {

@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 16:37:01 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 15:26:08 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:55:01 by pspuhler         ###   ########.fr       */
 /*                                                                             */
 /* ************************************************************************** */
 
@@ -14,6 +14,8 @@
 - Line 26: ft_strdup() 
 - Line 31: ft_strdup()
 */
+
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 

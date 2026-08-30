@@ -6,9 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 11:16:32 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 11:32:40 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:53:45 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void	ft_striter(char *s, void (*f)(char *))
 {

@@ -6,10 +6,11 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 10:33:35 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/20 14:46:37 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:46:38 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 void	ft_bzero(void *b, size_t len)

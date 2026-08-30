@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 19:21:11 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/23 17:11:39 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:54:25 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t size)

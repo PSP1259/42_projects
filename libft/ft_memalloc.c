@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/24 12:13:01 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/24 12:34:06 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:48:23 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 void	*ft_memalloc(size_t size)

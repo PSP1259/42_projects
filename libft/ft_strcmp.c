@@ -6,9 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/18 11:46:01 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/18 11:54:31 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:52:36 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_strcmp(const char *s1, const char *s2)
 {

@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 16:05:21 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 16:32:20 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:56:51 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdlib.h>
 
 char	*ft_strsub(char const *s, unsigned int start, size_t len)

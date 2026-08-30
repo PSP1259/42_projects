@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/28 15:41:47 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/28 15:47:55 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:53:26 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stddef.h>
 
 int ft_strnequ(char const *s1, char const *s2, size_t n)

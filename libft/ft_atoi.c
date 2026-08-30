@@ -6,10 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 19:16:15 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/21 18:20:12 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:45:37 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 #include <stdio.h>
 
 int	ft_atoi(const char *nptr)

@@ -6,12 +6,13 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 19:37:36 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/07/27 22:55:52 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 17:46:49 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Without ft_bzero()
 
+#include "libft.h"
 #include <stdio.h>
 #include <stdlib.h>
 
