@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 19:35:16 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/15 16:47:34 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/30 18:16:28 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,23 +27,27 @@ typedef struct s_list
 
 t_list *ft_lstnew(void const *content, size_t content_size)
 {
-	t_list	*list;
+    t_list *node;
 
-	list = malloc(sizeof(t_list));
-	if (!list)
-		return (NULL);
-	if (!content)
-	{
-		list->content = NULL;
-		list->content_size = 0;
-	}
-	else
-	{
-		list->content = (void *)content;
-		list->content_size = content_size;
-	}
-	list->next = NULL;
-	return (list);
+    if (!(node = (t_list *)malloc(sizeof(t_list))))
+        return (NULL);
+    if (!content)
+    {
+        node->content = NULL;
+        node->content_size = 0;
+    }
+    else
+    {
+        if (!(node->content = malloc(content_size)))
+        {
+            free(node);
+            return (NULL);
+        }
+        ft_memcpy(node->content, content, content_size);
+        node->content_size = content_size;
+    }
+    node->next = NULL;
+    return (node);
 }
 
 /*
