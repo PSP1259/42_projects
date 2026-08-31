@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/08/30 18:06:17 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/08/31 16:48:32 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,10 +29,9 @@ typedef struct s_list
 t_list	*ft_lstnew(void const *content, size_t content_size); // done
 void		ft_lstdelone(t_list **alst, void (*del)(void *, size_t)); // done
 void    ft_lstdel(t_list **alst, void (*del)(void *, size_t)); // done
-
-void		ft_lstadd(t_list **alst, t_list *new);
-void		ft_lstiter(t_list *lst, void (*f)(t_list *elem));
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+void		ft_lstadd(t_list **alst, t_list *new); // done
+void		ft_lstiter(t_list *lst, void (*f)(t_list *elem)); // done
+t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem)); // done
 
 /* ---------------	CHARS		--------------- */
 int			ft_isalpha(int c); // done

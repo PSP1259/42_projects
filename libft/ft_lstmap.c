@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 17:33:56 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/31 16:45:06 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/31 16:46:53 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,6 @@ t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
 			tail->next = new_node;
 		tail = new_node;
 		lst = lst->next;
-		return (head);
 	}
+	return (head);
 }
