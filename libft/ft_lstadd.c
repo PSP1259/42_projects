@@ -6,10 +6,16 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 17:31:44 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:32:18 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/08/31 16:33:29 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 void	ft_lstadd(t_list **alst, t_list *new)
+{
+	if (!alst || !new)
+		return ;
+	new->next = *alst;
+	*alst = new;
+}
