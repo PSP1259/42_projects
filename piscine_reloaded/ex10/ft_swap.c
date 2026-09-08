@@ -6,15 +6,15 @@
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 09:31:58 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/08 09:33:30 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/08 11:26:03 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 void	ft_swap(int *a, int *b)
 {
-	char	*tmp;
+	char	tmp;
 
-	*tmp = *a;
+	tmp = *a;
 	*a = *b;
-	*b = *tmp;
+	*b = tmp;
 }
