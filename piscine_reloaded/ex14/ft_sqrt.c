@@ -6,11 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 11:04:45 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/08 11:16:03 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/08 11:17:46 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-int	ft_sqrt(int	nb)
+int	ft_sqrt(int nb)
 {
 	int	i;
 
