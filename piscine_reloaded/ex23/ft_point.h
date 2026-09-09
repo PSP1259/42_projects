@@ -6,12 +6,12 @@
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/08 17:23:31 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/08 17:31:37 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/09 12:35:03 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_POINT_H
-#define FT_POINT_H
+# define FT_POINT_H
 
 typedef struct t_point
 {
