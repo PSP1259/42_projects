@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/05 18:27:48 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:51:39 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/11 20:18:52 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -48,7 +48,7 @@ static char	**ft_malloc_strs(char **strs, const char *s, char c)
 {
 	int	count;
 	int	i;
-	int x;
+	int	x;
 
 	count = 0;
 	i = 0;
@@ -58,7 +58,7 @@ static char	**ft_malloc_strs(char **strs, const char *s, char c)
 		if (s[i] != c)
 			count++;
 		if ((s[i] == c && i > 0 && s[i - 1] != c)
-				|| (s[i] != c && s[i + 1] == '\0'))
+			|| (s[i] != c && s[i + 1] == '\0'))
 		{
 			strs[x] = malloc(sizeof(char) * (count + 1));
 			if (!strs[x])
@@ -119,29 +119,28 @@ char	**ft_split(char const *s, char c)
 {
 	char	**strs;
 	int		wordcount;
+	int		i;
 
 	if (!s)
-	{
-		strs = malloc(sizeof(char) * 1);
-		if (!strs)
-			return (NULL);
-		*strs = NULL;
-		return (strs);
-	}
+		return (NULL);
 	wordcount = ft_count_words(s, c);
 	strs = malloc(sizeof(*strs) * (wordcount + 1));
 	if (!strs)
 		return (NULL);
-	if (ft_malloc_strs(strs, s, c))
+	i = 0;
+	while (i <= wordcount)
 	{
-		ft_cpy_strs(strs, s, c);
-		strs[wordcount] = NULL;
+		strs[i] = NULL;
+		i++;
 	}
+	if (ft_malloc_strs(strs, s, c))
+		ft_cpy_strs(strs, s, c);
 	else
 		strs = ft_merror(strs);
 	return (strs);
 }
 
+/*
 int	main(void)
 {
 	char	**result;
@@ -160,3 +159,4 @@ int	main(void)
 	free(result);
 	return (0);
 }
+*/
