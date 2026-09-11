@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 12:36:17 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/09 13:01:54 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/11 11:46:53 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ void	ft_putnbr(int nbr)
 }
 */
 
-void	ft_foreach(int *tab, int length, void(*f)(int))
+void	ft_foreach(int *tab, int length, void (*f)(int))
 {
 	int	i;
 
