@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/14 18:36:47 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:50:52 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/11 20:31:41 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,6 @@ void	ft_putnbr_fd(int n, int fd)
 {
 	long	nbr;
 	char	result;
-
 
 	nbr = n;
 	if (nbr < 0)
