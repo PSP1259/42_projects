@@ -6,10 +6,10 @@
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/09 13:02:51 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/09 13:34:43 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/11 11:44:24 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
+/*
 int	count_machine(char *ar)
 {
 	int	i;
@@ -25,10 +25,11 @@ int	count_machine(char *ar)
 	}
 	return (0);
 }
+*/
 
 int	ft_count_if(char **tab, int (*f)(char *))
 {
-	int count;
+	int	count;
 	int	i;
 
 	count = 0;
@@ -44,6 +45,7 @@ int	ft_count_if(char **tab, int (*f)(char *))
 	return (count);
 }
 
+/*
 #include <stdio.h>
 
 int	main(void)
@@ -55,3 +57,4 @@ int	main(void)
 	printf("%i", result);
 	return (0);
 }
+*/
