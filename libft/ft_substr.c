@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 13:45:55 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:57:15 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/11 19:58:17 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,34 +24,28 @@
 char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
 	char	*res;
-	size_t	s_len;
 	size_t	i;
+	size_t	j;
 
 	if (!s)
 		return (NULL);
-	s_len = 0;
-	while (s[s_len] != '\0')
-		s_len++;
-	if ((size_t)start >= s_len)
-	{
-		res = malloc(1 * sizeof(char));
-		if (!res)
-			return (NULL);
-		res[0] = '\0';
-		return (res);
-	}
-	if (len > s_len - start)
-		len = s_len - start;
+	i = 0;
+	while (s[i])
+		i++;
+	if ((size_t)start >= i)
+		len = 0;
+	else if (len > i - start)
+		len = i - start;
 	res = malloc((len + 1) * sizeof(char));
 	if (!res)
 		return (NULL);
-	i = 0;
-	while (i < len && s[start + i] != '\0')
+	j = 0;
+	while (j < len)
 	{
-		res[i] = s[start + i];
-		i++;
+		res[j] = s[start + j];
+		j++;
 	}
-	res[i] = '\0';
+	res[j] = '\0';
 	return (res);
 }
 
