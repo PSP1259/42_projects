@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 19:37:36 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 13:52:48 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 14:14:47 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,20 +16,20 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-void	*ft_calloc(size_t count, size_t size)
+void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void			*r;
 	unsigned char	*rr;
 	size_t			i;
 
-	if (count != 0 && (count * size) / count != size)
+	if (nmemb != 0 && (nmemb * size) / nmemb != size)
 		return (NULL);
-	r = malloc(count * size);
+	r = malloc(nmemb * size);
 	if (!r)
 		return (NULL);
 	i = 0;
 	rr = (unsigned char *)r;
-	while (i < (count * size))
+	while (i < (nmemb * size))
 	{
 		rr[i] = '\0';
 		i++;
