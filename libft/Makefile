@@ -6,7 +6,7 @@
 #    By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/18 14:36:49 by pspuhler@st       #+#    #+#              #
-#    Updated: 2026/08/30 17:42:01 by pspuhler@st      ###   ########.fr        #
+#    Updated: 2026/09/12 14:28:26 by pspuhler@st      ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -27,51 +27,30 @@ SRC = ft_isalpha \
   ft_isascii \
   ft_isprint \
   ft_strlen \
-  ft_memalloc \
-  ft_memdel \
   ft_memset \
   ft_bzero \
   ft_memcpy \
-  ft_memccpy \
   ft_memmove \
-  ft_strcpy \
-  ft_strncpy \
   ft_strlcpy \
-  ft_strcat \
-  ft_strncat \
   ft_strlcat \
-  ft_strnew \
-  ft_strdel \
-  ft_strclr \
   ft_toupper \
   ft_tolower \
   ft_strchr \
   ft_strrchr \
-  ft_strcmp \
   ft_strncmp \
   ft_memchr \
   ft_memcmp \
-  ft_strstr \
   ft_strnstr \
   ft_atoi \
   ft_calloc \
   ft_strdup \
   ft_substr \
-  ft_strsub \
   ft_strjoin \
   ft_strtrim \
   ft_split \
   ft_itoa \
-  ft_strmap \
   ft_strmapi \
-  ft_striter \
   ft_striteri \
-  ft_strequ \
-  ft_strnequ \
-  ft_putchar \
-  ft_putstr \
-  ft_putendl \
-  ft_putnbr \
   ft_putchar_fd \
   ft_putstr_fd \
   ft_putendl_fd \
@@ -79,9 +58,12 @@ SRC = ft_isalpha \
 
 # List of bonus function names (without extensions)
 BONUS_SRC = ft_lstnew \
+  ft_lstadd_front \
+  ft_lstsize \
+  ft_lstlast \
+  ft_lstadd_back \
   ft_lstdelone \
-  ft_lstdel \
-  ft_lstadd \
+  ft_lstclear \
   ft_lstiter \
   ft_lstmap  
 
