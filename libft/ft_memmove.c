@@ -6,30 +6,30 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 16:59:19 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:49:33 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 14:19:10 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stdio.h>
 
-void	*ft_memmove(void *dest, const void *src, size_t len)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*dd;
 	const char	*ss;
 
 	dd = (char *)dest;
 	ss = (const char *)src;
-	if (len == 0 || dest == src)
+	if (n == 0 || dest == src)
 		return (dest);
 	if (!dest || !src)
 		return (0);
-	if (dd > ss && dd < ss + len)
-		while (len--)
-			*(dd + len) = *(ss + len);
+	if (dd > ss && dd < ss + n)
+		while (n--)
+			*(dd + n) = *(ss + n);
 	else
 	{
-		while (len--)
+		while (n--)
 		{
 			*dd = *ss;
 			dd++;
