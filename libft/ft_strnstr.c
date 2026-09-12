@@ -6,13 +6,13 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 18:12:22 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:55:59 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 14:10:47 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char	*ft_strnstr(const char *b, const char *l, size_t len)
+char	*ft_strnstr(const char *big, const char *little, size_t len)
 {
 	size_t	ib;
 	size_t	il;
@@ -22,16 +22,16 @@ char	*ft_strnstr(const char *b, const char *l, size_t len)
 	if (len == 0)
 		return (0);
 	ib = 0;
-	while (ib < len && b[ib] != '\0')
+	while (ib < len && big[ib] != '\0')
 	{
 		il = 0;
-		while (b[ib + il] != '\0' && l[il] != '\0'
-			&& ib + il < len && b[ib + il] == l[il])
+		while (big[ib + il] != '\0' && little[il] != '\0'
+			&& ib + il < len && big[ib + il] == little[il])
 		{
 			il++;
 		}
-		if (l[il] == '\0')
-			return ((char *)&b[ib]);
+		if (little[il] == '\0')
+			return ((char *)&big[ib]);
 		ib++;
 	}
 	return (0);
