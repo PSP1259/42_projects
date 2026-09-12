@@ -6,66 +6,57 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 11:40:18 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/29 17:55:56 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 10:29:16 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
+
 /*
-1. Check if alst || *alst exist
-2. Use delete function (definded outside of this function)
-3. Free the block
-4. Pointer set to NULL to avoid crashes
+void	del_content(void *content)
+{
+	free(content);
+}
 */
 
-#include "libft.h"
-
-void	ft_lstdelone(t_list **alst, void (*del)(void *, size_t))
+void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!alst || !*alst)
+	if (!lst)
 		return ;
 	if (del)
-		del((*alst)->content, (*alst)->content_size);
-	free(*alst);
-	*alst = NULL;
+		(del)(lst->content);
+	free(lst);
 }
 
-/*---Test the function---
-
-void	del_content(void *content, size_t size)
-{
-	(void)size;
-	if (content)
-	{
-		free(content);
-		printf("Successfull deleted");
-	}
-}
-
+/*
 int	main(void)
 {
-	t_list	*elem;
-	char	*text;
+	t_list	*node;
+	char	*dynamic_str;
 
-	text = ft_strdup("Hola Malaga");
-	if (!text)
+	// 1. Dynamically allocate content so it can actually be freed
+	dynamic_str = strdup("Test String");
+	if (!dynamic_str)
 		return (1);
-	elem = ft_lstnew(text, 9);
-	if (!elem)
+
+	// 2. Create the node using your ft_lstnew
+	node = ft_lstnew(dynamic_str);
+	if (!node)
 	{
-		free(text);
+		free(dynamic_str);
 		return (1);
 	}
-	printf("Before modification, Content: %s\n\n", (char *)elem->content);
-	printf("Pointer adress: %p\n\n", (void *)elem);
 
-	//Important: & -> because double pointer **
-	ft_lstdelone(&elem, del_content);
+	printf("Node created. Content: %s\n", (char *)node->content);
 
-	printf("After deletion:\n");
-	if (elem == NULL)
-		printf("Pointer is NULL -> correct");
-	else
-		printf("Pointer is not NULL -> failed");
+	// 3. Delete the node and its content
+	ft_lstdelone(node, del_content);
+
+	printf("Node and dynamically allocated content successfully freed.\n");
+
 	return (0);
 }
 */
