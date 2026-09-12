@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/23 16:21:36 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:54:14 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 13:51:16 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ size_t	ft_strlcat(char *dest, const char *src, size_t size)
 	i = 0;
 	lens = 0;
 	lend = 0;
-	while (dest[lend] != '\0')
+	while (lend < size && dest[lend] != '\0')
 		lend++;
 	while (src[lens] != '\0')
 		lens++;
