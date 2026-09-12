@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/26 11:58:54 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:56:11 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 13:58:27 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -36,6 +36,7 @@ char	*ft_strrchr(const char *s, int c)
 		}
 		p--;
 	}
+	p = NULL;
 	return (0);
 }
 
