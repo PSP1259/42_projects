@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 19:37:36 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:46:49 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 13:52:48 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,6 +22,8 @@ void	*ft_calloc(size_t count, size_t size)
 	unsigned char	*rr;
 	size_t			i;
 
+	if (count != 0 && (count * size) / count != size)
+		return (NULL);
 	r = malloc(count * size);
 	if (!r)
 		return (NULL);
