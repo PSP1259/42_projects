@@ -6,42 +6,101 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 17:33:56 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/31 16:46:53 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 11:05:00 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdlib.h>
+#include <stdio.h>
+#include <string.h>
 
-t_list	*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem))
+/*
+// 1. The 'f' function: Creates a NEW string (uppercase)
+void	*map_to_upper(void *content)
 {
-	t_list	*head;
-	t_list	*tail;
-	t_list	*new_node;
+	char	*str;
+	char	*new_str;
+	int		i;
 
-	if (!lst || !f)
-		return (0);
-	head = 0;
-	tail = 0;
+	str = (char *)content;
+	new_str = strdup(str); // Allocate memory for the new mapped content
+	if (!new_str)
+		return (NULL);
+	i = 0;
+	while (new_str[i])
+	{
+		if (new_str[i] >= 'a' && new_str[i] <= 'z')
+			new_str[i] -= 32;
+		i++;
+	}
+	return (new_str);
+}
+
+// 2. The 'del' function
+void	del_content(void *content)
+{
+	free(content);
+}
+*/
+
+t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
+{
+	t_list	*newlst;
+	t_list	*node;
+	void	*content;
+
+	if (!lst || !f || !del)
+		return (NULL);
+	newlst = NULL;
 	while (lst)
 	{
-		new_node = f(lst);
-		if (!new_node)
+		content = f(lst->content);
+		node = ft_lstnew(content);
+		if (!node)
 		{
-			while (head)
-			{
-				tail = head->next;
-				free(head->content);
-				free(head);
-				head = tail;
-			}
-			return (0);
+			del(content);
+			ft_lstclear(&newlst, del);
+			return (NULL);
 		}
-		if (!head)
-			head = new_node;
-		else
-			tail->next = new_node;
-		tail = new_node;
+		ft_lstadd_back(&newlst, node);
 		lst = lst->next;
 	}
-	return (head);
+	return (newlst);
 }
+
+/*
+int	main(void)
+{
+	t_list	*node1;
+	t_list	*node2;
+	t_list	*node3;
+	t_list	*mapped_list;
+	t_list	*tmp;
+
+	// Setup original list
+	node1 = ft_lstnew(strdup("hello"));
+	node2 = ft_lstnew(strdup("malaga"));
+	node3 = ft_lstnew(strdup("libft"));
+	node1->next = node2;
+	node2->next = node3;
+
+	// Execute ft_lstmap
+	mapped_list = ft_lstmap(node1, map_to_upper, del_content);
+
+	// Print new list
+	printf("--- Mapped List ---\n");
+	tmp = mapped_list;
+	while (tmp)
+	{
+		printf("%s\n", (char *)tmp->content);
+		tmp = tmp->next;
+	}
+
+	// Clean up both lists to prevent leaks
+	ft_lstclear(&node1, del_content);
+	ft_lstclear(&mapped_list, del_content);
+
+	return (0);
+}
+*/
