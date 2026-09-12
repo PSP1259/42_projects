@@ -6,27 +6,27 @@
 /*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/21 18:41:08 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:49:42 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/12 14:16:44 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <stddef.h>
 
-void	*ft_memset(void *b, int c, size_t len)
+void	*ft_memset(void *s, int c, size_t n)
 {
 	unsigned char	*p;
 	unsigned char	ch;
 
-	p = (unsigned char *)b;
+	p = (unsigned char *)s;
 	ch = c;
-	while (len > 0)
+	while (n > 0)
 	{
 		*p = ch;
 		p++;
 		len--;
 	}
-	return (b);
+	return (s);
 }
 
 /*
