@@ -25,5 +25,10 @@ int	main(void)
     f_orig = printf("Origi printf: Pointer %p\n", &x);
     printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
 
+	// Test 5: Dezimalzahlen (%d / %i)
+	printf("--- Test 5: Dezimal & Integer ---\n");
+	f_mine = ft_printf("My ft_printf: Num %d and %i\n", 42, -120);
+	f_orig = printf("Origi printf: Num %d and %i\n", 42, -120);
+	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
 	return (0);
 }
