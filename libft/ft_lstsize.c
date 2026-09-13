@@ -6,13 +6,13 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/12 09:54:03 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 10:01:22 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/13 11:53:20 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-unsigned int	ft_lstsize(t_list *lst)
+int	ft_lstsize(t_list *lst)
 {
 	unsigned int	i;
 
