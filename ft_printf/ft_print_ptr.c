@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 12:30:49 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/13 16:14:32 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/13 21:00:26 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,14 @@ static int	ft_put_hex(unsigned long long n)
 {
 	int		count;
 	char	*hex;
+	char	c;
 
 	hex = "0123456789abcdef";
 	count = 0;
 	if (n >= 16)
 		count += ft_put_hex(n / 16);
-	write(1, &hex[n % 16], 1);
+	c = hex[n % 16];
+	write(1, &c, 1);
 	count++;
 	return (count);
 }
