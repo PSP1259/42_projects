@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 15:42:37 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/13 12:12:27 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/13 12:30:36 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,5 +20,6 @@
 int	ft_printf(const char *format, ...);
 int ft_print_char(va_list args);
 int	ft_print_str(va_list args);
+int	ft_print_ptr(va_list args);
 
 #endif
