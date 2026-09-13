@@ -1,27 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_printf.h                                        :+:      :+:    :+:   */
+/*   ft_print_unsigned.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/01 15:42:37 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/13 20:26:33 by pspuhler         ###   ########.fr       */
+/*   Created: 2026/09/13 20:27:28 by pspuhler          #+#    #+#             */
+/*   Updated: 2026/09/13 20:35:05 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#ifndef FT_PRINTF_H
-#define FT_PRINTF_H
+#include "ft_printf.h"
 
-# include "../libft/libft.h"
-# include <stdarg.h>
-# include <unistd.h>
+static int	ft_put_unsigned(unsigned int n)
+{
+	int		count;
+	char 	c;
 
-int	ft_printf(const char *format, ...);
-int ft_print_char(va_list args);
-int	ft_print_str(va_list args);
-int	ft_print_ptr(va_list args);
-int	ft_print_putnbr(va_list args);
-int	ft_print_unsigned(va_list args);
+	count = 0;
+	if (n >= 10)
+		count += ft_put_unsigned(n / 10);
+	c = (n % 10) + '0';
+	write(1, &c, 1);
+	count++;
+	return (count);
+}
 
-#endif
+int	ft_print_unsigned(va_list args)
+{
+	int				count;
+	unsigned int	n;
+	
+	n = va_arg(args, unsigned int);
+	count = ft_put_unsigned(n);
+	return (count);
+}

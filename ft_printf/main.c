@@ -30,5 +30,11 @@ int	main(void)
 	f_mine = ft_printf("My ft_printf: Num %d and %i\n", 42, -120);
 	f_orig = printf("Origi printf: Num %d and %i\n", 42, -120);
 	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
+
+	// Test 6: Unsigned Integer (%u)
+    printf("--- Test 6: Unsigned Integer ---\n");
+    f_mine = ft_printf("My ft_printf: Unsigned %u\n", 4294967295);
+    f_orig = printf("Origi printf: Unsigned %u\n", 4294967295U);
+    printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
 	return (0);
 }
