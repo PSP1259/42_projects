@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 15:43:03 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/01 18:18:10 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/13 12:27:51 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,7 +21,8 @@ int	ft_eval_format(char specifier, va_list args)
 		count += ft_print_char(args);
 	else if (specifier == 's')
 		count += ft_print_str(args);
-	
+	else if (specifier == 'p')
+		count += ft_print_ptr(args);
 	
 
 
