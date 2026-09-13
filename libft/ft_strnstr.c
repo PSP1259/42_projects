@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 18:12:22 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 14:10:47 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/13 11:46:28 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,8 +17,8 @@ char	*ft_strnstr(const char *big, const char *little, size_t len)
 	size_t	ib;
 	size_t	il;
 
-	if (*l == '\0')
-		return ((char *)b);
+	if (*little == '\0')
+		return ((char *)big);
 	if (len == 0)
 		return (0);
 	ib = 0;
