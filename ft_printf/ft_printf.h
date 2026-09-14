@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 15:42:37 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/14 13:28:22 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/14 13:46:35 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ int	ft_print_str(va_list args);
 int	ft_print_ptr(va_list args);
 int	ft_print_putnbr(va_list args);
 int	ft_print_unsigned(va_list args);
-int	ft_print_hex_lower(va_list args);
+int	ft_print_hex_lowercase(va_list args);
 int	ft_print_hex_uppercase(va_list args);
 int	ft_print_percent(void);
 
