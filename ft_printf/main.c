@@ -48,5 +48,10 @@ int	main(void)
 	f_mine = ft_printf("My ft_printf: Hex %X\n", 255);
 	f_orig = printf("Origi printf: Hex %X\n", 255);
 	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);	
+	
+	// Test 9. Percent Sign (%%)
+    f_mine = ft_printf("My ft_printf: Percent [100%%]\n");
+    f_orig = printf("Origi printf: Percent [100%%]\n");
+    printf("Ret -> Mine: %d | Orig: %d\n\n", f_mine, f_orig);
 	return (0);
 }
