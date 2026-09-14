@@ -42,5 +42,11 @@ int	main(void)
 	f_mine = ft_printf("My ft_printf: Hex %x\n", 255);
 	f_orig = printf("Origi printf: Hex %x\n", 255);
 	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
+	
+	// Test 8: Hexadecimal Uppercase (%X)
+	printf("--- Test 8: Hexadecimal Uppercase ---\n");
+	f_mine = ft_printf("My ft_printf: Hex %X\n", 255);
+	f_orig = printf("Origi printf: Hex %X\n", 255);
+	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);	
 	return (0);
 }
