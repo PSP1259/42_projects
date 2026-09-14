@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 15:43:03 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/14 13:50:09 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/14 14:19:04 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -35,7 +35,6 @@ int	ft_eval_format(char specifier, va_list args)
 		count += ft_print_percent();
 	return (count);
 }
-	
 
 int	ft_printf(const char *format, ...)
 {

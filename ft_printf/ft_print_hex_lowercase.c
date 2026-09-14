@@ -1,12 +1,12 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_hex_lower.c                               :+:      :+:    :+:   */
+/*   ft_print_hex_lowercase.c                           :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 20:48:58 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/13 21:01:05 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/14 14:18:35 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 int	ft_put_hex_lower(unsigned int n)
 {
 	int		count;
-	char 	*hex;
+	char	*hex;
 	char	c;
 
 	hex = "0123456789abcdef";
@@ -27,7 +27,6 @@ int	ft_put_hex_lower(unsigned int n)
 	count++;
 	return (count);
 }
-
 
 int	ft_print_hex_lower(va_list args)
 {

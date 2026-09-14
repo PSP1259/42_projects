@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/14 12:48:33 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/14 13:08:19 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/14 14:16:49 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_put_hex_uppercase(unsigned int n)
 	int		count;
 	char	*hex;
 	char	c;
-	
+
 	count = 0;
 	hex = "0123456789ABCDEF";
 	if (n >= 16)
