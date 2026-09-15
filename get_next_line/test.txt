@@ -1,0 +1,3 @@
+First line written with new line
+Second line with new line
+Last line without new line
