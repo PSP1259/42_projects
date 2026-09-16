@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 16:19:32 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/16 16:39:13 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/16 16:51:30 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,3 +31,24 @@ char *ft_strchr(const char *s, int c)
 		return ((char *)&s[i]);
 	return (NULL);
 }
+
+int	ft_strlen(char *c)
+{
+	int	len;
+
+	len = 0;
+	while (c[len])
+		len++;
+	return (len - 1);
+}
+
+char *ft_strjoin(char *stash, char *buffer)
+{
+	int		i;
+	int		j;
+	char	*s3;
+	
+	if (!buffer)
+		return (NULL);
+	s3 = malloc((ft_strlen[stash] + ft_strlen[buffer] + 1) * sizeof(char));
+
