@@ -6,7 +6,7 @@
 #    By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/18 14:36:49 by pspuhler@st       #+#    #+#              #
-#    Updated: 2026/09/18 16:23:32 by pspuhler         ###   ########.fr        #
+#    Updated: 2026/09/18 16:28:32 by pspuhler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -54,7 +54,7 @@ SRC = ft_isalpha \
   ft_putchar_fd \
   ft_putstr_fd \
   ft_putendl_fd \
-  ft_putnbr_fd \
+  ft_putnbr_fd
 
 # List of bonus function names (without extensions)
 BONUS_SRC = ft_lstnew \
@@ -65,7 +65,7 @@ BONUS_SRC = ft_lstnew \
   ft_lstdelone \
   ft_lstclear \
   ft_lstiter \
-  ft_lstmap \ 
+  ft_lstmap 
 
 # Automatically append .c and .o extensions to the lists above
 SRCS = $(addsuffix .c, $(SRC))
