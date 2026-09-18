@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/23 17:12:16 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:52:08 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/18 16:22:22 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,15 +15,18 @@
 
 char	*ft_strchr(const char *s, int c)
 {
+	char	cc;
+
+	cc = c;
 	while (*s != '\0')
 	{
-		if (*s == c)
+		if (*s == cc)
 		{
 			return ((char *)s);
 		}
 		s++;
 	}
-	if (*s == c)
+	if (*s == cc)
 		return ((char *)s);
 	return (0);
 }
