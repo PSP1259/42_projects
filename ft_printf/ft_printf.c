@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 15:43:03 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 16:50:54 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/18 17:10:39 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,6 +29,10 @@ int	ft_eval_format(char specifier, va_list args)
 		count += ft_print_unsigned(args);
 	else if (specifier == 'x')
 		count += ft_print_hex_lower(args);
+	else if (specifier == 'X')
+		count += ft_print_hex_upper(args);
+	else if (specifier == '%')
+		count += ft_print_percent();
 	return (count);
 }
 

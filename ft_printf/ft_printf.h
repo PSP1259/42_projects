@@ -6,14 +6,14 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 15:42:37 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 16:53:26 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/18 17:19:11 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef FT_PRINTF_H
 # define FT_PRINTF_H
 
-# include "../libft/libft.h"
+# include "libft/libft.h"
 # include <stdarg.h>
 # include <unistd.h>
 
@@ -24,5 +24,7 @@ int	ft_print_ptr(va_list args);
 int	ft_print_putnbr(va_list args);
 int	ft_print_unsigned(va_list args);
 int	ft_print_hex_lower(va_list args);
+int	ft_print_hex_upper(va_list args);
+int	ft_print_percent(void);
 
 #endif
