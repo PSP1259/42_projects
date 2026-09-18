@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 11:40:18 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 10:29:16 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/14 16:26:49 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -24,10 +24,10 @@ void	del_content(void *content)
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst)
+	if (!lst || !del)
 		return ;
-	if (del)
-		(del)(lst->content);
+	if (lst->content)
+		del(lst->content);
 	free(lst);
 }
 

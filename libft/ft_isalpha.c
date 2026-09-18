@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 15:08:21 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:47:16 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/16 15:32:07 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -29,7 +29,7 @@ int main(void)
 {
     int result;
 
-    result = ft_isalpha(68);
+    result = ft_isalpha(33);
     printf("%i", result);
     return (0);
 }

@@ -1,19 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_print_percent.c                                 :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/09/14 13:15:25 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 22:56:40 by pspuhler         ###   ########.fr       */
+/*   Created: 2026/09/15 15:34:28 by pspuhler          #+#    #+#             */
+/*   Updated: 2026/09/15 16:18:34 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "ft_printf.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-int	ft_print_percent(void)
-{
-	write(1, "%", 1);
-	return (1);
-}
+# include <unistd.h>
+# include <stdlib.h>
+
+#ifndef BUFFER_SIZE                                                                 
+# define BUFFER_SIZE 10                                                             
+#endif
+
+char *get_next_line(int fd);
+
+#endif

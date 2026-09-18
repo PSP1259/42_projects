@@ -3,14 +3,15 @@
 #                                                         :::      ::::::::    #
 #    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+         #
+#    By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2026/09/18 16:49:14 by pspuhler          #+#    #+#              #
-#    Updated: 2026/09/18 17:30:59 by pspuhler         ###   ########.fr        #
+#    Created: 2026/09/14 13:33:18 by pspuhler          #+#    #+#              #
+#    Updated: 2026/09/18 17:43:07 by pspuhler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = libftprintf.a
+
 CC = cc
 CFLAGS = -Wall -Wextra -Werror
 
