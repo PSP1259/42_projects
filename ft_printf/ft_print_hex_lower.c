@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 23:07:49 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 23:11:35 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/18 23:15:32 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -33,7 +33,7 @@ int	ft_print_hex_lower(va_list args)
 	int				count;
 	unsigned int	n;
 
-	n =  va_arg(args, unsigned int);
+	n = va_arg(args, unsigned int);
 	count = ft_put_hex_lower(n);
 	return (count);
 }
