@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 20:27:28 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/13 20:35:05 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/18 16:52:26 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 static int	ft_put_unsigned(unsigned int n)
 {
 	int		count;
-	char 	c;
+	char	c;
 
 	count = 0;
 	if (n >= 10)
@@ -30,7 +30,7 @@ int	ft_print_unsigned(va_list args)
 {
 	int				count;
 	unsigned int	n;
-	
+
 	n = va_arg(args, unsigned int);
 	count = ft_put_unsigned(n);
 	return (count);
