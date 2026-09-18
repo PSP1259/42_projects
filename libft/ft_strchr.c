@@ -6,12 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/23 17:12:16 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 16:22:22 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/18 16:26:22 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 char	*ft_strchr(const char *s, int c)
 {
@@ -32,6 +31,8 @@ char	*ft_strchr(const char *s, int c)
 }
 
 /*
+#include <stdio.h>
+
 int main(void)
 {
 	const char	*str = "Hola Malaga";
