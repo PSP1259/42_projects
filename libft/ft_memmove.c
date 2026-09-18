@@ -6,7 +6,7 @@
 /*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 16:59:19 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 14:19:10 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/18 16:35:54 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,7 +22,7 @@ void	*ft_memmove(void *dest, const void *src, size_t n)
 	ss = (const char *)src;
 	if (n == 0 || dest == src)
 		return (dest);
-	if (!dest || !src)
+	if (!dest && !src)
 		return (0);
 	if (dd > ss && dd < ss + n)
 		while (n--)
