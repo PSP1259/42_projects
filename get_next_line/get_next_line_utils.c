@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 16:19:32 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/19 11:17:01 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/19 17:38:13 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -32,14 +32,16 @@ char *ft_strchr(const char *s, int c)
 	return (NULL);
 }
 
-int	ft_strlen(char *c)
+int	ft_strlen(char *s)
 {
 	int	len;
 
+	if (!s)
+		return (0);
 	len = 0;
-	while (c[len])
+	while (s[len])
 		len++;
-	return (len - 1);
+	return (len);
 }
 
 char	*strjoin_helper(char *stash, char *buffer, char *s3)
@@ -67,7 +69,7 @@ char	*strjoin_helper(char *stash, char *buffer, char *s3)
 char	*ft_strjoin(char *stash, char *buffer)
 {
 	char	*s3;
-	
+
 	if (!buffer)
 		return (NULL);
 	if (!stash)
@@ -77,7 +79,7 @@ char	*ft_strjoin(char *stash, char *buffer)
 			return (NULL);
 		stash[0] = '\0';
 	}
-	s3 = malloc((ft_strlen(stash) + ft_strlen(buffer) + 1) * sizeof(char));
+	s3 = malloc((ft_strlen(stash) + (ft_strlen(buffer) + 1) * sizeof(char)) * sizeof(char));
 	if (!s3)
 	{
 		free(stash);
