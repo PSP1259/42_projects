@@ -6,16 +6,16 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:43:07 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/19 15:26:12 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/09/19 17:17:46 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-static char	*read_and_stash(int fd, char *stash)
+char	*read_and_stash(int fd, char *stash)
 {
 	char		*buffer;
-	ssize_t		buffer_read;
+	ssize_t		bytes_read;
 
 	buffer = malloc(sizeof(char) * (BUFFER_SIZE + 1));
 	if (!buffer)
@@ -62,12 +62,53 @@ char *extract_line(char *stash)
 	return (line);
 }
 
+char	*clean_stash(char *stash)
+{
+	int		i;
+	int		in;
+	int		j;
+	char	*new_stash;
 
-
-
-
+	i = 0;
+	while (stash[i] != '\0' && stash[i] != '\n')
+		i++;
+	if (stash[i] == '\0' || stash[i + 1] == '\0')
+	{
+		free(stash);
+		return (NULL);
+	}
+	in = 0;
+	while (stash[i + 1 + in] != '\0')
+		in++;
+	new_stash = malloc(sizeof(char) * (in + 1));
+	if (!new_stash)
+	{
+		free(stash);
+		return (NULL);
+	}
+	j = 0;
+	while (stash[i + 1])
+	{
+		new_stash[j] = stash[i + 1];
+		j++;
+		i++;
+	}
+	new_stash[j] = '\0';
+	free(stash);
+	return (new_stash);
+}
 
 char	*get_next_line(int fd)
 {
+	static char	*stash;
+	char		*line;
 
+	if (fd < 0 || BUFFER_SIZE <= 0)
+		return (NULL);
+	stash = read_and_stash(fd, stash);
+	if (!stash)
+		return (NULL);
+	line = extract_line(stash);
+	stash = clean_stash(stash);
+	return (line);
 }
