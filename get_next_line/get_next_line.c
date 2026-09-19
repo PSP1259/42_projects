@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42malaga.c      +#+  +:+       +#+        */
+/*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:43:07 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/16 15:54:56 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/19 15:26:12 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,29 +37,35 @@ static char	*read_and_stash(int fd, char *stash)
 	return (stash);
 }
 
-
-	ptr = ft_strchr(stash, '\n');
-	while (*line != '\n' && r != -1)
+char *extract_line(char *stash)
+{
+	int 	len;
+	int		i;
+	char	*line;
+	if (!stash || !stash[0])
+		return (NULL);
+	len = 0;
+	while (stash[len] != '\n' && stash[len] != '\0')
+		len++;
+	if (stash[len] == '\n')
+		len++;
+	line = malloc(sizeof(char) * (len + 1));
+	if (!line)
+		return (NULL);
+	i = 0;
+	while (i < len)
 	{
-		bytes_read = read(fd, buffer, BUFFER_SIZE);
-		
-		new_line = ft_strjoin(line, new_line);
-		if (read == 0)
-			buffer[bytes_read] = '\0';
-		bytes_read++;
+		line[i] = stash[i];
+		i++;
 	}
+	line[i] = '\0';
+	return (line);
 }
 
-extract_line(char *new_line, )
-{
 
 
 
 
-
-		char *strchr(const char *s, int c);
-
-	
 
 char	*get_next_line(int fd)
 {
