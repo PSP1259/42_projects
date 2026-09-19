@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:43:07 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/19 17:17:46 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/09/19 17:34:25 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -65,34 +65,27 @@ char *extract_line(char *stash)
 char	*clean_stash(char *stash)
 {
 	int		i;
-	int		in;
 	int		j;
 	char	*new_stash;
 
 	i = 0;
-	while (stash[i] != '\0' && stash[i] != '\n')
+	while (stash[i] && stash[i] != '\n')
 		i++;
-	if (stash[i] == '\0' || stash[i + 1] == '\0')
+	if (!stash[i])
 	{
 		free(stash);
 		return (NULL);
 	}
-	in = 0;
-	while (stash[i + 1 + in] != '\0')
-		in++;
-	new_stash = malloc(sizeof(char) * (in + 1));
+	new_stash = malloc(sizeof(char) * (ft_strlen(stash) - i));
 	if (!new_stash)
 	{
 		free(stash);
 		return (NULL);
 	}
+	i++;
 	j = 0;
-	while (stash[i + 1])
-	{
-		new_stash[j] = stash[i + 1];
-		j++;
-		i++;
-	}
+	while (stash[i])
+		new_stash[j++] = stash[i++];
 	new_stash[j] = '\0';
 	free(stash);
 	return (new_stash);
