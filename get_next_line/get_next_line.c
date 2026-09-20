@@ -6,7 +6,7 @@
 /*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:43:07 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/19 17:34:25 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/09/20 16:09:20 by pspuhler@st      ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -62,6 +62,19 @@ char *extract_line(char *stash)
 	return (line);
 }
 
+char	*helper_clean_stash(char *stash, int i)
+{
+	char	*new_stash;
+
+	new_stash = malloc(sizeof(char) * (ft_strlen(stash) - i));
+	if (!new_stash)
+	{
+		free(stash);
+		return (NULL);
+	}
+	return (new_stash)
+}
+
 char	*clean_stash(char *stash)
 {
 	int		i;
@@ -76,12 +89,7 @@ char	*clean_stash(char *stash)
 		free(stash);
 		return (NULL);
 	}
-	new_stash = malloc(sizeof(char) * (ft_strlen(stash) - i));
-	if (!new_stash)
-	{
-		free(stash);
-		return (NULL);
-	}
+	new_stash = helper_clean_stash(stash, i)
 	i++;
 	j = 0;
 	while (stash[i])
