@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_bzero.c                                         :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 10:33:35 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:46:38 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/21 15:56:41 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,4 +38,4 @@ int	main(void)
 	printf("After: %s\n", &text[1]);
 	return (0);
 }
-*/
+/*
