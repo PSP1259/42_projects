@@ -6,7 +6,7 @@
 #    By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/07/18 14:36:49 by pspuhler@st       #+#    #+#              #
-#    Updated: 2026/09/18 16:34:18 by pspuhler         ###   ########.fr        #
+#    Updated: 2026/09/21 13:10:08 by pspuhler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -57,15 +57,15 @@ SRC = ft_isalpha \
   ft_putnbr_fd
 
 # List of bonus function names (without extensions)
-BONUS_SRC = ft_lstnew \
-  ft_lstadd_front \
-  ft_lstsize \
-  ft_lstlast \
-  ft_lstadd_back \
-  ft_lstdelone \
-  ft_lstclear \
-  ft_lstiter \
-  ft_lstmap 
+BONUS_SRC = ft_lstnew_bonus \
+  ft_lstadd_front_bonus \
+  ft_lstsize_bonus \
+  ft_lstlast_bonus \
+  ft_lstadd_back_bonus \
+  ft_lstdelone_bonus \
+  ft_lstclear_bonus \
+  ft_lstiter_bonus \
+  ft_lstmap_bonus 
 
 # Automatically append .c and .o extensions to the lists above
 SRCS = $(addsuffix .c, $(SRC))
