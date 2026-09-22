@@ -3,16 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 16:19:32 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/19 17:43:36 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/09/22 11:19:59 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-char *ft_strchr(const char *s, int c)
+char	*ft_strchr(const char *s, int c)
 {
 	int		i;
 	char	cc;
@@ -79,7 +79,7 @@ char	*ft_strjoin(char *stash, char *buffer)
 			return (NULL);
 		stash[0] = '\0';
 	}
-	s3 = malloc((ft_strlen(stash) + (ft_strlen(buffer) + 1) * sizeof(char)) * sizeof(char));
+	s3 = malloc(ft_strlen(stash) + (ft_strlen(buffer) + 1));
 	if (!s3)
 	{
 		free(stash);

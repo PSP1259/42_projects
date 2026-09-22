@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler@student.42.fr <pspuhler>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/15 14:43:07 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/20 16:09:20 by pspuhler@st      ###   ########.fr       */
+/*   Updated: 2026/09/22 11:14:18 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -37,11 +37,12 @@ char	*read_and_stash(int fd, char *stash)
 	return (stash);
 }
 
-char *extract_line(char *stash)
+char	*extract_line(char *stash)
 {
-	int 	len;
+	int		len;
 	int		i;
 	char	*line;
+
 	if (!stash || !stash[0])
 		return (NULL);
 	len = 0;
@@ -72,7 +73,7 @@ char	*helper_clean_stash(char *stash, int i)
 		free(stash);
 		return (NULL);
 	}
-	return (new_stash)
+	return (new_stash);
 }
 
 char	*clean_stash(char *stash)
@@ -89,7 +90,7 @@ char	*clean_stash(char *stash)
 		free(stash);
 		return (NULL);
 	}
-	new_stash = helper_clean_stash(stash, i)
+	new_stash = helper_clean_stash(stash, i);
 	i++;
 	j = 0;
 	while (stash[i])
