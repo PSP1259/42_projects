@@ -6,14 +6,11 @@
 /*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 11:40:18 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/23 14:26:41 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:57:13 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 /*
 void	del_content(void *content)

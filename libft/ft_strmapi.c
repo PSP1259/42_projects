@@ -3,21 +3,19 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strmapi.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/12 16:37:01 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/11 20:24:49 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:56:24 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 /*
-- Line 26: ft_strdup() 
+- Line 26: ft_strdup()
 - Line 31: ft_strdup()
 */
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char))
 {

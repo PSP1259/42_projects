@@ -3,18 +3,16 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/01 13:06:13 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:53:07 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:56:39 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 // Without strlcpy (line 32)
 
 #include "libft.h"
-#include <stdio.h>
-#include <stdlib.h>
 
 char	*ft_strdup(const char *s)
 {

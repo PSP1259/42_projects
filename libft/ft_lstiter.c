@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstiter.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/31 16:34:06 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 10:48:44 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:57:10 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 /*
 void	print_content(void *content)
