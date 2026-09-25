@@ -5,33 +5,28 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/27 19:37:36 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/23 14:57:20 by pspuhler         ###   ########.fr       */
+/*   Created: 2026/09/25 12:24:40 by pspuhler          #+#    #+#             */
+/*   Updated: 2026/09/25 12:24:46 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-
-// Without ft_bzero()
 
 #include "libft.h"
 
 void	*ft_calloc(size_t nmemb, size_t size)
 {
 	void			*r;
-	unsigned char	*rr;
-	size_t			i;
 
 	if (nmemb != 0 && (nmemb * size) / nmemb != size)
 		return (NULL);
+	if (nmemb == 0 || size == 0)
+	{
+		nmemb = 1;
+		size = 1;
+	}
 	r = malloc(nmemb * size);
 	if (!r)
 		return (NULL);
-	i = 0;
-	rr = (unsigned char *)r;
-	while (i < (nmemb * size))
-	{
-		rr[i] = '\0';
-		i++;
-	}
+	ft_bzero(r, nmemb * size);
 	return (r);
 }
 
