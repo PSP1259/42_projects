@@ -22,8 +22,7 @@ Clone the repo and run the Makefile to generate the `libft.a` file.
 
 | Command | Action |
 | :--- | :--- |
-| `make` | Compiles the mandatory functions into `libft.a`. |
-| `make bonus` | Compiles mandatory + linked list bonus functions. |
+| `make` | Compiles functions into `libft.a`. |
 | `make clean` | Removes all `.o` object files. |
 | `make fclean` | Removes `.o` files AND the `libft.a` binary. |
 | `make re` | Performs `fclean` then `make` (full rebuild). |
@@ -62,7 +61,7 @@ Custom utility functions for string manipulation and file descriptor outputs.
 | **Conversion** | `ft_itoa` |
 | **Output (FD)** | `ft_putchar_fd`, `ft_putstr_fd`, `ft_putendl_fd`, `ft_putnbr_fd` |
 
-### Part 3: Linked Lists (Bonus)
+### Part 3: Linked Lists
 Tools to create, iterate, and destroy `t_list` structures.
 
 | Category | Functions |
@@ -74,4 +73,4 @@ Tools to create, iterate, and destroy `t_list` structures.
 
 ## 🔮 Resources
 *   **Documentation:** `man` pages (e.g., `man 3 memcpy`)
-*   **AI Usage:** AI (Gemini) was used as a peer-review tool to verify Norminette compliance, debug edge cases (like `INT_MIN` in `ft_itoa` and memory leaks in `ft_lstmap`).
+*   **AI Usage:** Gemini was used for peer review: checking Nthe Makefile, exercising edge cases such as `INT_MIN`, high-bit characters, zero-sized `calloc` requests, and allocation failures.
