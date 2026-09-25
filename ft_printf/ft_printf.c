@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_printf.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/01 15:43:03 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 22:58:47 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/25 17:59:39 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -42,6 +42,8 @@ int	ft_printf(const char *format, ...)
 	int			i;
 	int			count;
 
+	if (!format)
+		return (-1);
 	i = 0;
 	count = 0;
 	va_start(args, format);

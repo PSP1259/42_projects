@@ -6,7 +6,7 @@
 #    By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2026/09/25 12:22:09 by pspuhler          #+#    #+#              #
-#    Updated: 2026/09/25 12:24:56 by pspuhler         ###   ########.fr        #
+#    Updated: 2026/09/25 17:50:48 by pspuhler         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -19,6 +19,9 @@ CFLAGS = -Wall -Werror -Wextra
 
 # Archive command to create the static library
 AR = ar rcs
+
+# Directory where source files are located
+SRC_DIR = src/
 
 # List of mandatory function names (without extensions)
 SRC = ft_isalpha \
@@ -65,20 +68,18 @@ SRC = ft_isalpha \
   ft_lstiter \
   ft_lstmap
 
-# Automatically append .c and .o extensions to the lists above
-SRCS = $(addsuffix .c, $(SRC))
+# Automatically build paths for sources (src/ft_isalpha.c) and keep object files in the root
+SRCS = $(addprefix $(SRC_DIR), $(addsuffix .c, $(SRC)))
 OBJS = $(addsuffix .o, $(SRC))
 
 # Default rule: builds the mandatory library
 all: $(NAME)
 
-# Pattern rule: tells Make how to compile a .c file into a .o file
-# $< is the first prerequisite (the .c file), $@ is the target (the .o file)
-%.o: %.c
+# Pattern rule: tells Make how to compile a .c file from src/ into a .o file
+%.o: $(SRC_DIR)%.c
 	$(CC) $(CFLAGS) -c -o $@ $<
 
 # Rule to build the static library
-# $@ is the target (libft.a), $^ is all prerequisites (all .o files)
 $(NAME): $(OBJS)
 	$(AR) $@ $^
 
