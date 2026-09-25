@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/26 11:58:54 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/23 14:56:22 by pspuhler         ###   ########.fr       */
+/*   Created: 2026/09/25 12:25:23 by pspuhler          #+#    #+#             */
+/*   Updated: 2026/09/25 12:25:27 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -25,7 +25,7 @@ char	*ft_strrchr(const char *s, int c)
 	p = (char *)s + len;
 	if (ch == '\0')
 	{
-		return (p++);
+		return (p);
 	}
 	while (p >= s)
 	{
