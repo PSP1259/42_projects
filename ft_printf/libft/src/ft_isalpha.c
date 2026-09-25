@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalpha.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/18 15:08:21 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:47:16 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/22 13:26:56 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_isalpha(int c)
 	if ((c >= 'a' && c <= 'z')
 		|| (c >= 'A' && c <= 'Z'))
 	{
-		return (c);
+		return (1);
 	}
 	return (0);
 }
@@ -29,7 +29,7 @@ int main(void)
 {
     int result;
 
-    result = ft_isalpha(68);
+    result = ft_isalpha(33);
     printf("%i", result);
     return (0);
 }

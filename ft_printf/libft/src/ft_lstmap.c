@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstmap.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/30 17:33:56 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 11:05:00 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:57:08 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 /*
 // 1. The 'f' function: Creates a NEW string (uppercase)

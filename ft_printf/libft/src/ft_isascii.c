@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/21 18:21:19 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:47:24 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/22 13:28:22 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_isascii(int c)
 	if (c == 0)
 		return (1);
 	if (c >= 1 && c <= 127)
-		return (c);
+		return (1);
 	return (0);
 }
 

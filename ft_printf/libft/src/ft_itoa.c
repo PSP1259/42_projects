@@ -3,23 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/07 18:18:14 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:47:56 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:57:17 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-/*
-	DESCRIPTION :
-	The function ft_itoa converts the integer n into a string of characters.
-
-	RESULT VALUE :
-	The string of the converted integer.
-*/
-
 #include "libft.h"
-#include <stdlib.h>
 
 static int	ft_len(long n)
 {

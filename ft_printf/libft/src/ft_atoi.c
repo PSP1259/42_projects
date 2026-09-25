@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/27 19:16:15 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/08/30 17:45:37 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:47:58 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdio.h>
 
 int	ft_atoi(const char *nptr)
 {
@@ -43,11 +42,14 @@ int	ft_atoi(const char *nptr)
 /*
 int	main(void)
 {
-	const char	text[] = "+42";
+	const char	text[] = "--42";
 	int	result;
+	int	result_lib;
 
 	result = ft_atoi(text);
-	printf("%i", result);
+	result_lib = atoi(text);
+	printf("%i\n\n", result);
+	printf("%i", result_lib);
 	return (0);
 }
 */

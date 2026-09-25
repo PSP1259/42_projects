@@ -3,17 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_lstdelone.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/08/15 11:40:18 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 10:29:16 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 15:48:45 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
 
 /*
 void	del_content(void *content)
@@ -24,10 +21,8 @@ void	del_content(void *content)
 
 void	ft_lstdelone(t_list *lst, void (*del)(void *))
 {
-	if (!lst)
-		return ;
-	if (del)
-		(del)(lst->content);
+	del(lst->content);
+	lst->next = NULL;
 	free(lst);
 }
 

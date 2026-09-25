@@ -3,15 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_memcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/07/22 11:16:20 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/12 14:03:58 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/09/23 14:56:59 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stddef.h>
 
 void	*ft_memcpy(void *dest, const void *src, size_t n)
 {
@@ -55,11 +54,11 @@ int main(void)
     int     dest_arr[3] = {0, 0, 0};
 
     ft_memcpy(dest_arr, src_arr, sizeof(src_arr));
-    printf("Test 3 (Integer Array): %d, %d, %d\n", 
+    printf("Test 3 (Integer Array): %d, %d, %d\n",
 	dest_arr[0], dest_arr[1], dest_arr[2]);
 
     char    same_memory[50] = "Test for the same adress";
-    
+
     ft_memcpy(same_memory, same_memory, 5);
     printf("Test 4 (Same adress): %s\n", same_memory);
 
