@@ -5,8 +5,8 @@
 /*                                                    +:+ +:+         +:+     */
 /*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2026/07/18 14:32:31 by pspuhler@st       #+#    #+#             */
-/*   Updated: 2026/09/22 15:59:46 by pspuhler         ###   ########.fr       */
+/*   Created: 2026/09/25 12:25:50 by pspuhler          #+#    #+#             */
+/*   Updated: 2026/09/25 12:26:02 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,7 +16,6 @@
 # include <stddef.h>
 # include <unistd.h>
 # include <stdlib.h>
-# include <stdio.h>
 
 /* ---------------	CHARS		--------------- */
 int				ft_isalpha(int c);
