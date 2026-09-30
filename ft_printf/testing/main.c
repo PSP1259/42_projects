@@ -1,4 +1,4 @@
-#include "ft_printf.h"
+#include "../ft_printf.h"
 #include <stdio.h> // to compare
 
 int	main(void)
@@ -36,19 +36,19 @@ int	main(void)
     f_mine = ft_printf("My ft_printf: Unsigned %u\n", 4294967295);
     f_orig = printf("Origi printf: Unsigned %u\n", 4294967295U);
     printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
-	
+
 	// Test 7: Hexadecimal Lowercase (%x)
 	printf("--- Test 7: Hexadecimal Lowercase ---\n");
 	f_mine = ft_printf("My ft_printf: Hex %x\n", 255);
 	f_orig = printf("Origi printf: Hex %x\n", 255);
 	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
-	
+
 	// Test 8: Hexadecimal Uppercase (%X)
 	printf("--- Test 8: Hexadecimal Uppercase ---\n");
 	f_mine = ft_printf("My ft_printf: Hex %X\n", 255);
 	f_orig = printf("Origi printf: Hex %X\n", 255);
-	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);	
-	
+	printf("Output -> Mine: %d | Original: %d\n\n", f_mine, f_orig);
+
 	// Test 9. Percent Sign (%%)
     f_mine = ft_printf("My ft_printf: Percent [100%%]\n");
     f_orig = printf("Origi printf: Percent [100%%]\n");
