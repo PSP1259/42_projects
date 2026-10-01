@@ -16,8 +16,7 @@ void test_fd(int fd, const char *name)
     while ((line = get_next_line(fd)) != NULL)
     {
         // Print Two digit number for numbers of lines
-		// [] Square Brackets to visiualize the '\n' as well
-        printf("Zeile %02d: %s\n", line_count++, line);
+        printf("Zeiile %02d: %s\n", line_count++, line);
 
         // Mandatory: next while-lopp, next line printed
         free(line);
