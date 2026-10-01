@@ -53,7 +53,7 @@ int main(int argc, char **argv)
             fd = open(argv[i], O_RDONLY);
             if (fd == -1)
             {
-                perror("\nFehler beim Öffnen der Datei");
+                perror("\nFailed opening the file");
             }
             else
             {
