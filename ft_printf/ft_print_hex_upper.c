@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_hex_upper.c                               :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/18 16:57:36 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 17:00:55 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/10/01 12:11:10 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

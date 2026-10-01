@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_unsigned.c                                :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 20:27:28 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/18 23:12:14 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/10/01 12:11:04 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ft_print_putnbr.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: pspuhler <pspuhler@student.42.fr>          +#+  +:+       +#+        */
+/*   By: pspuhler <pspuhler@student.42malaga.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/09/13 16:26:34 by pspuhler          #+#    #+#             */
-/*   Updated: 2026/09/13 17:14:46 by pspuhler         ###   ########.fr       */
+/*   Updated: 2026/10/01 12:11:07 by pspuhler         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
