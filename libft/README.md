@@ -73,4 +73,4 @@ Tools to create, iterate, and destroy `t_list` structures.
 
 ## 🔮 Resources
 *   **Documentation:** `man` pages (e.g., `man 3 memcpy`)
-*   **AI Usage:** Gemini was used for peer review: checking Nthe Makefile, exercising edge cases such as `INT_MIN`, high-bit characters, zero-sized `calloc` requests, and allocation failures.
+*   **AI Usage:** Gemini was used for peer review: checking the Makefile, exercising edge cases such as `INT_MIN`, high-bit characters, zero-sized `calloc` requests, and allocation failures.
