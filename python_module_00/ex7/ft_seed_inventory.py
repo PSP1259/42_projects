@@ -1,6 +1,5 @@
 def ft_seed_inventory(seed_type: str, quantity: int, unit: str) -> None:
-    formated_strings =
-    {
+    formated_strings = {
         "packets": f"{quantity} packets available",
         "grams": f"{quantity} grams total",
         "area": f"covers {quantity} square meters"
