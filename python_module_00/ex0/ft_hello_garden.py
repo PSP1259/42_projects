@@ -1,3 +1,3 @@
 
-def ft_hello_garden():
+def ft_hello_garden() -> none:
     print("Hello, Garden Community!")
